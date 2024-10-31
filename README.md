@@ -1,3 +1,3 @@
 # Fotograf w Krakowie
 
-- Hostować czcionki lokalnie
+- Przekonwertować zdjęcia na format .webp
