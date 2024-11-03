@@ -1,0 +1,161 @@
+/********** LANDING ***********/
+
+.landing {
+    background-image: url('../image/photo/a-large-building-with-a-lot-of-birds-around-it-by-Aimable-Mugabo.png');
+    background-position: 0 30%;
+    
+    .heading {
+        padding-top: 128px;
+        min-width: 50vw;
+        max-width: 75vw;
+        margin: 0 auto 64px auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .lead {
+        font-size: 16px;
+    }
+}
+
+.lead {
+    background-color: rgba(239, 239, 239, 0.75);
+    font-size: 24px;
+    margin: 0 12.5vw;
+    padding: 8px;
+    border-radius: 8px;
+    min-width: 75vw;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 88px;
+    padding-bottom: 128px;
+}
+
+.primary, .secondary {
+    padding: 12px 16px;
+    border: none;
+    margin: 8px 32px;
+}
+
+.secondary {
+    background-color: #efefef;
+
+    .link {
+        color: #2A2A2A;
+    }
+}
+
+.primary {
+    background-color: #3E505B;
+    
+    .link {
+        color: #efefef;
+    }
+}
+
+.icon, .cta {
+    font-size: 24px;
+    margin: 0 4px;
+}
+
+/* ******* O MNIE ********* */
+
+.about {
+    .subheader {
+        background-color: #8AEA92;
+        padding: 16px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        .heading {
+            text-transform: uppercase;
+            margin-left: 16px;
+            font-size: 24px;
+        }
+    }
+
+    .text {
+        font-size: 28px;
+        max-width: 45vw;
+        padding: 16px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .photo {
+        max-width: 45vw;
+        padding: 16px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .images {
+        padding: 0 5vw;
+        display: grid;  
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .about {
+        .text {
+            font-size: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .about {
+        .subheader {
+            .heading {
+                font-size: 20px;
+            }
+        }
+
+        .text {
+            font-size: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about {
+        .subheader {
+            .heading {
+                font-size: 16px;
+            }
+        }
+
+        .text {
+            max-width: 90vw;
+        }
+        
+        .photo {
+            max-width: 90vw;
+        }
+
+        .images {
+            grid-template-rows: 6fr;
+            grid-template-columns: 1fr;
+            justify-items: center;
+        }
+
+        .grid-3 {
+            grid-row: 4;
+            grid-column: 1;
+        }
+
+        .grid-4 {
+            grid-row: 3;
+            grid-column: 1;
+        }
+    }
+}

@@ -5,7 +5,7 @@
   font-family: 'Material Symbols Outlined';
   font-style: normal;
   font-weight: 100 700;
-  src: url('./font/material-symbols-outlined.woff2') format('woff2');
+  src: url('../font/material-symbols-outlined.woff2') format('woff2');
 }
 
 /* Alfabet łaciński rozszerzony */
@@ -15,7 +15,7 @@
   font-weight: 300 800;
   font-stretch: 100%;
   font-display: swap;
-  src: url('./font/open-sans-latin-extended.woff2') format('woff2');
+  src: url('../font/open-sans-latin-extended.woff2') format('woff2');
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, 
     U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
@@ -27,7 +27,7 @@
   font-weight: 300 800;
   font-stretch: 100%;
   font-display: swap;
-  src: url('./font/open-sans-latin.woff2') format('woff2');
+  src: url('../font/open-sans-latin.woff2') format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, 
     U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
@@ -150,68 +150,72 @@
     }
 }
 
-/********** LANDING ***********/
+/* ******** ZNIŻKA ******** */
 
-.landing {
-    background-image: url('./image/photo/a-large-building-with-a-lot-of-birds-around-it-by-Aimable-Mugabo.png');
-    background-position: 0 30%;
-    
-    .heading {
-        padding-top: 128px;
-        min-width: 50vw;
-        max-width: 75vw;
-        margin: 0 auto 64px auto;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .lead {
-        font-size: 16px;
-    }
-}
-
-.lead {
-    background-color: rgba(239, 239, 239, 0.75);
-    font-size: 24px;
-    margin: 0 12.5vw;
-    padding: 8px;
-    border-radius: 8px;
-    min-width: 75vw;
-}
-
-.buttons {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin-top: 88px;
-    padding-bottom: 128px;
-}
-
-.primary, .secondary {
-    padding: 12px 16px;
-    border: none;
-    margin: 8px 32px;
-}
-
-.secondary {
-    background-color: #efefef;
-
-    .link {
-        color: #2A2A2A;
-    }
-}
-
-.primary {
+.incentive {
     background-color: #3E505B;
+    padding: 16px 0 48px 0;
+    color: #efefef;
     
-    .link {
-        color: #efefef;
+    .subheader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 32px 0;
+        
+        .heading {
+            text-transform: uppercase;
+            margin-left: 16px;
+            font-size: 32px;
+        }
+
+        .icon {
+            font-size: 32px;
+        }
+    }
+
+    .text {
+        font-size: 24px;
+        margin: 0 72px;
+    }
+
+    .primary {
+        padding: 12px 16px;
+        border: none;
+        margin: 8px 32px;
+        background-color: #8AEA92;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 48px auto 0 auto;
+        text-transform: uppercase;
+    }
+
+    .code {
+        text-transform: uppercase;
     }
 }
 
-.icon, .cta {
-    font-size: 24px;
-    margin: 0 4px;
+@media screen and (max-width: 900px) {
+    .incentive {
+        .subheader {
+            .heading {
+                font-size: 20px;
+            }
+        }
+
+        .text {
+            font-size: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .incentive {
+        .text {
+            margin: 0 32px;
+        }
+    }
 }
 
 /* ********* INNE ********* */
@@ -255,8 +259,8 @@
 }
 
 .divider, .footer {
-    font-size: 32px;
-    margin: 16px 0;
+    font-size: 32px !important;
+    margin: 16px 0 !important;
     text-align: center;
     width: 100vw;
 }
