@@ -76,7 +76,8 @@
     padding: 40px 0;
     column-gap: 16px;
     margin: 0 8px;
-
+    cursor: pointer;
+    
     .icon {
         font-size: 48px;
         color: #2a2a2a;
@@ -263,4 +264,5 @@
     margin: 16px 0 !important;
     text-align: center;
     width: 100vw;
+    cursor: pointer;
 }
