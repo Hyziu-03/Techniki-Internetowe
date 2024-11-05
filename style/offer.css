@@ -1,0 +1,83 @@
+/* ******** CENNIK ******** */
+
+.offer {
+    .heading {
+        padding: 48px 0;
+    }
+}
+
+.description, .table {
+    font-size: 24px;
+}
+
+.cell, .table {
+    border: 1px solid #2a2a2a;
+    border-collapse: collapse;
+    padding: 8px;
+}
+
+.table {
+    .row:nth-child(2n) {
+        background-color: #8AEA92;
+    }
+}
+
+.row {
+    border-bottom: 1px solid #2a2a2a;
+}
+
+.incentive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .text {
+        max-width: 40vw;
+        font-size: 24px;
+        margin: 24px 0;
+    }
+
+    .primary {
+        font-size: 24px;
+        text-transform: none;
+        
+        * {
+            margin: 0 4px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .incentive .text {
+        max-width: 80%;
+    }
+
+    .pricing {
+        flex-direction: column;
+
+        .description {
+            max-width: 66vw !important;
+            margin-top: 64px;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+        }
+    }
+}
+
+.pricing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 48px;
+
+    .description {
+        margin-right: 5vw;
+        margin-left: 2.5vw;
+        max-width: 33vw;
+    }
+
+    .table {
+        margin-left: 5vw;
+        margin-right: 2.5vw;
+    }
+}
