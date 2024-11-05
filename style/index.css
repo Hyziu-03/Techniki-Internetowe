@@ -43,7 +43,8 @@
 
 .secondary {
     background-color: #efefef;
-
+    user-select: none;
+    
     .link {
         color: #2A2A2A;
     }
@@ -53,6 +54,10 @@
     background-color: #3E505B;
     
     .link {
+        color: #efefef;
+    }
+
+    .cta {
         color: #efefef;
     }
 }
@@ -157,5 +162,13 @@
             grid-row: 3;
             grid-column: 1;
         }
+    }
+}
+
+/* ******** KOD *********** */
+
+.content_copy {
+    .cta {
+        color: #2a2a2a;
     }
 }

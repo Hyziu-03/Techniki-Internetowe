@@ -120,6 +120,7 @@
     background-color: #8AEA92;
     flex-wrap: wrap;
     padding: 0 16px;
+    user-select: none;
 
     .link {
         color: #2a2a2a;
@@ -163,11 +164,13 @@
         justify-content: center;
         align-items: center;
         padding: 32px 0;
+        color: #efefef;
         
         .heading {
             text-transform: uppercase;
             margin-left: 16px;
             font-size: 32px;
+            color: #efefef;
         }
 
         .icon {
@@ -178,6 +181,7 @@
     .text {
         font-size: 24px;
         margin: 0 72px;
+        color: #efefef;
     }
 
     .primary {
@@ -190,10 +194,13 @@
         align-items: center;
         margin: 48px auto 0 auto;
         text-transform: uppercase;
+        cursor: pointer;
+        user-select: none;
     }
 
     .code {
         text-transform: uppercase;
+        color: #efefef;
     }
 }
 
@@ -225,6 +232,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    color: #2a2a2a;
 }
 
 .link {
