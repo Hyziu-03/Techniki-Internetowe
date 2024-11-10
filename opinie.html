@@ -11,6 +11,7 @@
     <meta name="theme-color" content="">
     <title>Fotograf w Krakowie - Pełen profesjonalizm i pasja</title>
     <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/review.css">
 </head>
 <body>
     <div class="container">
@@ -36,42 +37,74 @@
                 </li>
             </ol>
         </nav>
-        <main>
+        <main class="reviews">
             <section class="review">
-                <img src="" alt="" class="photo">
-                <p class="text">Pełen profesjonalizm i pasja! Zdjęcia są nie tylko technicznie doskonałe, ale mają w sobie to 'coś', 
-                co sprawia, że zatrzymujesz się nad nimi na dłużej. Praca z takim fotografem to czysta przyjemność!</p>
-                <p class="caption">Ania</p>
+                <picture class="picture">
+                    <!-- woman standing next to pink wall while scratching her head by averie woodard -->
+                    <source media="(max-width: 768px)" srcset="./image/portrait/cropped-woman-pink-background.jpg"  />
+                    <img 
+                        src="./image/portrait/woman-pink-background.jpg" 
+                        alt=""
+                        class="photo"
+                    >
+                </picture>
+                <section class="opinion">
+                    <p class="text open-sans-light">Pełen profesjonalizm i pasja! Zdjęcia są nie tylko technicznie doskonałe, 
+                    ale mają w sobie to 'coś', co sprawia, że zatrzymujesz się nad nimi na dłużej. Praca z takim fotografem 
+                    to czysta przyjemność!</p>
+                    <p class="caption are-you-serious-regular">Ania</p>
+                </section>
             </section>
             <section class="review">
-                <img src="" alt="" class="photo">
-                <p class="text">Niezwykle wszechstronny fotograf, który potrafi uchwycić zarówno emocje na twarzy, 
-                jak i piękno otaczającego krajobrazu. Sesja była komfortowa, a efekt końcowy przerósł moje oczekiwania!</p>
-                <p class="caption">Piotr</p>
+                <section class="opinion">
+                    <p class="text open-sans-light">Niezwykle wszechstronny fotograf, który potrafi uchwycić zarówno emocje na 
+                    twarzy, jak i piękno otaczającego krajobrazu. Sesja była komfortowa, a efekt końcowy przerósł moje 
+                    oczekiwania!</p>
+                    <p class="caption are-you-serious-regular">Piotr</p>
+                </section>
+                <picture class="picture">
+                    <!-- man covered by beige fur textile by Frank Marino -->
+                    <source media="(max-width: 550px)" srcset="./image/portrait/man-fur.jpg" />
+                    <source media="(max-width: 768px)" srcset="./image/portrait/cropped-man-fur.jpg" />
+                    <img src="./image/portrait/man-fur.jpg" alt="" class="photo">
+                </picture>
             </section>
             <section class="review">
-                <img src="" alt="" class="photo">
-                <p class="text">Zaangażowanie i kreatywność na najwyższym poziomie! Każde zdjęcie to małe dzieło sztuki, 
-                pełne detali i perfekcyjnie dopracowane. Zdecydowanie polecam!</p>
-                <p class="caption">Kasia</p>
+                <picture class="picture">
+                    <!-- woman in black V-neck shirt by Kirill Balobanov -->
+                    <source media="(max-width: 768px)" srcset="./image/portrait/cropped-woman-black-background.jpg" />
+                    <img src="./image/portrait/woman-black-background.jpg" alt="" class="photo">
+                </picture>
+                <section class="opinion">
+                    <p class="text open-sans-light">Zaangażowanie i kreatywność na najwyższym poziomie! Każde zdjęcie to małe 
+                    dzieło sztuki, pełne detali i perfekcyjnie dopracowane. Zdecydowanie polecam!</p>
+                    <p class="caption are-you-serious-regular">Kasia</p>
+                </section>
             </section>
             <section class="review">
-                <img src="" alt="" class="photo">
-                <p class="text">Współpraca z tym fotografem to gwarancja najwyższej jakości. Zdjęcia są naturalne, 
-                a jednocześnie mają artystyczny sznyt, który przyciąga wzrok. Z takimi umiejętnościami można zrobić wszystko</p>
-                <p class="caption">Marcin</p>
+               <section class="opinion">
+                    <p class="text open-sans-light">Współpraca z tym fotografem to gwarancja najwyższej jakości. Zdjęcia są 
+                    naturalne, a jednocześnie mają artystyczny sznyt, który przyciąga wzrok. Z takimi umiejętnościami można 
+                    zrobić wszystko</p>
+                    <p class="caption are-you-serious-regular">Marcin</p>
+               </section>
+               <picture class="picture">
+                    <!-- man standing in front of white concrete wall by Brooke Cagle -->
+                    <source media="(max-width: 768px)" srcset="./image/portrait/cropped-man-glasses.jpg" />
+                    <img src="./image/portrait/man-glasses.jpg" alt="" class="photo">
+               </picture>
             </section>
             <section class="incentive">
                 <header class="subheader">
                     <span class="icon">call</span>
-                    <h2 class="subheading">Zadzwoń teraz</h2>
+                    <h2 class="heading open-sans-semibold">Zadzwoń teraz</h2>
                 </header>
-                <p class="text">Masz pomysł na sesję zdjęciową lub potrzebujesz profesjonalnych zdjęć? Zadzwoń, 
+                <p class="text open-sans-light">Masz pomysł na sesję zdjęciową lub potrzebujesz profesjonalnych zdjęć? Zadzwoń, 
                 aby omówić szczegóły i dostosować ofertę do Twoich potrzeb. Wspólnie stworzymy coś wyjątkowego!</p>
                 <button class="primary">
                     <a href="kontakt.html" class="link">
                         <span class="icon">link</span>
-                        <span class="cta">Porozmawiajmy</span>
+                        <span class="cta open-sans-semibold">Porozmawiajmy</span>
                     </a>
                 </button>
             </section>
