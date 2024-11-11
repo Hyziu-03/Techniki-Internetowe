@@ -9,9 +9,26 @@
     <meta name="author" content="">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="author" content="Szymon Hyziak">
+    <meta name="title" content="Fotograf w Krakowie - Zapraszam do mojej pracowni">
+    
     <title>Fotograf w Krakowie - Zapraszam do mojej pracowni</title>
+    
     <link rel="stylesheet" href="./style/main.css">
     <link rel="stylesheet" href="./style/contact.css">
+    <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
+    <link 
+        rel="stylesheet" 
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" 
+        crossorigin="" 
+    />
+    <link rel="apple-touch-icon" href="./image/favicon.ico">
+    
+    <!--[if lt IE 9]>
+            !function(a,b){function c(a,b){var c=a.createElement("p"),d=a.getElementsByTagName("head")[0]||a.documentElement;return c.innerHTML="x<style>"+b+"</style>",d.insertBefore(c.lastChild,d.firstChild)}function d(){var a=t.elements;return"string"==typeof a?a.split(" "):a}function e(a,b){var c=t.elements;"string"!=typeof c&&(c=c.join(" ")),"string"!=typeof a&&(a=a.join(" ")),t.elements=c+" "+a,j(b)}function f(a){var b=s[a[q]];return b||(b={},r++,a[q]=r,s[r]=b),b}function g(a,c,d){if(c||(c=b),l)return c.createElement(a);d||(d=f(c));var e;return e=d.cache[a]?d.cache[a].cloneNode():p.test(a)?(d.cache[a]=d.createElem(a)).cloneNode():d.createElem(a),!e.canHaveChildren||o.test(a)||e.tagUrn?e:d.frag.appendChild(e)}function h(a,c){if(a||(a=b),l)return a.createDocumentFragment();c=c||f(a);for(var e=c.frag.cloneNode(),g=0,h=d(),i=h.length;i>g;g++)e.createElement(h[g]);return e}function i(a,b){b.cache||(b.cache={},b.createElem=a.createElement,b.createFrag=a.createDocumentFragment,b.frag=b.createFrag()),a.createElement=function(c){return t.shivMethods?g(c,a,b):b.createElem(c)},a.createDocumentFragment=Function("h,f","return function(){var n=f.cloneNode(),c=n.createElement;h.shivMethods&&("+d().join().replace(/[\w\-:]+/g,function(a){return b.createElem(a),b.frag.createElement(a),'c("'+a+'")'})+");return n}")(t,b.frag)}function j(a){a||(a=b);var d=f(a);return!t.shivCSS||k||d.hasCSS||(d.hasCSS=!!c(a,"article,aside,dialog,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}mark{background:#FF0;color:#000}template{display:none}")),l||i(a,d),a}var k,l,m="3.7.3",n=a.html5||{},o=/^<|^(?:button|map|select|textarea|object|iframe|option|optgroup)$/i,p=/^(?:a|b|code|div|fieldset|h1|h2|h3|h4|h5|h6|i|label|li|ol|p|q|span|strong|style|table|tbody|td|th|tr|ul)$/i,q="_html5shiv",r=0,s={};!function(){try{var a=b.createElement("a");a.innerHTML="<xyz></xyz>",k="hidden"in a,l=1==a.childNodes.length||function(){b.createElement("a");var a=b.createDocumentFragment();return"undefined"==typeof a.cloneNode||"undefined"==typeof a.createDocumentFragment||"undefined"==typeof a.createElement}()}catch(c){k=!0,l=!0}}();var t={elements:n.elements||"abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output picture progress section summary template time video",version:m,shivCSS:n.shivCSS!==!1,supportsUnknownElements:l,shivMethods:n.shivMethods!==!1,type:"default",shivDocument:j,createElement:g,createDocumentFragment:h,addElements:e};a.html5=t,j(b),"object"==typeof module&&module.exports&&(module.exports=t)}("undefined"!=typeof window?window:this,document);
+        <![endif]-->
 </head>
 <body>
     <div class="container">
@@ -26,7 +43,7 @@
                 <li class="item">
                     <a href="cennik.html" class="link">Oferta/Cennik</a>
                 </li>
-                <li class="item">
+                <li class="item open-sans-semibold">
                     <a href="kontakt.html" class="link">Kontakt</a>
                 </li>
                 <li class="item">
@@ -66,20 +83,12 @@
                     <span class="label open-sans-light">Wpłaty: 12 3456 7890 1234 5678 9012 3456</span>
                 </div>
             </section>
-            <section class="map">
-                <!-- API wstawiania Google Maps musi być użyte w <iframe>. -->
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1280.1201838637953!2d19.93255967864795!3d50.081786394966166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165a54530821b1%3A0x4545c44f3bb19fca!2sDoktora%20Twardego%206%2C%2031-201%20Krak%C3%B3w!5e0!3m2!1spl!2spl!4v1729593678580!5m2!1spl!2spl"
-                    width="800" 
-                    height="600" 
-                    allowfullscreen="" 
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
-                    class="frame">
-                </iframe>
-            </section>
+            <section class="map" id="map"></section>
         </main>
         <footer class="icon footer">arrow_upward</footer>
     </div>
+    <script src="js/leaflet.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/map.js"></script>
 </body>
 </html>
