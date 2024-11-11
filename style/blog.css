@@ -1,0 +1,64 @@
+/********** BLOG ***********/
+
+.post {
+    font-size: 20px;
+    margin: 0 5vw;
+
+    .photo {
+        width: 25vw;
+        margin: 0 2.5vw;
+    }
+
+    .subheading {
+        text-align: center;
+        margin: 64px 0 16px 0;
+    }
+
+    .timestamp {
+        font-size: 16px;
+    }
+    
+    .content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .description {
+        width: 60vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .post {
+        font-size: 16px;
+
+        .description {
+            width: 40vw;
+        }
+
+        .photo {
+            width: 35vw;
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .post {
+        .content {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .description, .photo {
+            width: 80vw;
+        }
+
+        .timestamp {
+            margin: 16px 0;
+        }
+    }
+}
