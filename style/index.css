@@ -1,7 +1,7 @@
 /********** LANDING ***********/
 
 .landing {
-    background-image: url('../image/photo/a-large-building-with-a-lot-of-birds-around-it-by-Aimable-Mugabo.png');
+    background-image: url('../image/photo/a-large-building-with-a-lot-of-birds-around-it-by-Aimable-Mugabo-10.webp');
     background-position: 0 30%;
     
     .heading {
@@ -168,6 +168,12 @@
 /* ******** KOD *********** */
 
 .content_copy {
+    .content_copy_icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .cta {
         color: #2a2a2a;
     }

@@ -278,3 +278,8 @@ html {
     width: 100vw;
     cursor: pointer;
 }
+
+.touch-target {
+    min-width: 48px;
+    min-height: 48px;
+}

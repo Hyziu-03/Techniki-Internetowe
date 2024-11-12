@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
+    <meta name="description" content="Zapraszam do mojej pracowni fotograficznej w Krakowie! Znajdujemy się przy ul. Doktora Twardego 6. ">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="keywords" content="">
     <meta name="author" content="">
@@ -15,8 +15,16 @@
     
     <title>Fotograf w Krakowie - Zapraszam do mojej pracowni</title>
     
-    <link rel="stylesheet" href="./style/main.css">
-    <link rel="stylesheet" href="./style/contact.css">
+    <link rel="preload" href="./style/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="./style/main.css">
+    </noscript>
+
+    <link rel="preload" href="./style/contact.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="./style/contact.css">
+    </noscript>
+
     <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
     <link 
         rel="stylesheet" 
@@ -33,7 +41,7 @@
 <body>
     <div class="container">
         <header>
-            <a href="index.html" class="header link">
+            <a href="index.html" class="header link touch-target">
                 <span class="icon">camera</span>
                 <span class="title open-sans-semibold">Fotograf w Krakowie</span>
             </a>
@@ -41,16 +49,16 @@
         <nav>
             <ol class="menu open-sans-light">
                 <li class="item">
-                    <a href="cennik.html" class="link">Oferta/Cennik</a>
+                    <a href="cennik.html" class="link touch-target">Oferta/Cennik</a>
                 </li>
                 <li class="item open-sans-semibold">
-                    <a href="kontakt.html" class="link">Kontakt</a>
+                    <a href="kontakt.html" class="link touch-target">Kontakt</a>
                 </li>
                 <li class="item">
-                    <a href="opinie.html" class="link">Opinie/Portfolio</a>
+                    <a href="opinie.html" class="link touch-target">Opinie/Portfolio</a>
                 </li>
                 <li class="item">
-                    <a href="blog.html" class="link">Blog</a>
+                    <a href="blog.html" class="link touch-target">Blog</a>
                 </li>
             </ol>
         </nav>
@@ -85,10 +93,10 @@
             </section>
             <section class="map" id="map"></section>
         </main>
-        <footer class="icon footer">arrow_upward</footer>
+        <footer class="icon footer touch-target arrow_upward">arrow_upward</footer>
     </div>
     <script src="js/leaflet.js"></script>
-    <script src="js/index.js"></script>
     <script src="js/map.js"></script>
+    <script async src="js/index.js"></script>
 </body>
 </html>

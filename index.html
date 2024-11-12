@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
+    <meta name="description" content="Uchwyć wyjątkowe chwile w sercu Krakowa - profesjonalne sesje, które opowiadają Twoją historię. Z pasją i precyzją, zawsze tam, gdzie potrzebujesz.">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="keywords" content="">
     <meta name="author" content="">
@@ -12,11 +12,20 @@
     <meta name="robots" content="noindex, nofollow">
     <meta name="author" content="Szymon Hyziak">
     <meta name="title" content="Fotograf w Krakowie - Fotograf blisko Ciebie na każdą okazję">
+    <link rel="manifest" href="./manifest.json">
     
     <title>Fotograf w Krakowie - Fotograf blisko Ciebie na każdą okazję</title>
     
-    <link rel="stylesheet" href="./style/main.css">
-    <link rel="stylesheet" href="./style/index.css">
+    <link rel="preload" href="./style/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="./style/main.css">
+    </noscript>
+
+    <link rel="preload" href="./style/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="./style/index.css">
+    </noscript>
+
     <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="./image/favicon.ico">
     
@@ -27,7 +36,7 @@
 <body>
     <div class="container">
         <header>
-            <a href="index.html" class="header link">
+            <a href="index.html" class="header link touch-target">
                 <span class="icon">camera</span>
                 <span class="title open-sans-semibold">Fotograf w Krakowie</span>
             </a>
@@ -35,16 +44,16 @@
         <nav>
             <ol class="menu open-sans-light">
                 <li class="item">
-                    <a href="cennik.html" class="link">Oferta/Cennik</a>
+                    <a href="cennik.html" class="link touch-target">Oferta/Cennik</a>
                 </li>
                 <li class="item">
-                    <a href="kontakt.html" class="link">Kontakt</a>
+                    <a href="kontakt.html" class="link touch-target">Kontakt</a>
                 </li>
                 <li class="item">
-                    <a href="opinie.html" class="link">Opinie/Portfolio</a>
+                    <a href="opinie.html" class="link touch-target">Opinie/Portfolio</a>
                 </li>
                 <li class="item">
-                    <a href="blog.html" class="link">Blog</a>
+                    <a href="blog.html" class="link touch-target">Blog</a>
                 </li>
             </ol>
         </nav>
@@ -54,14 +63,14 @@
                 <p class="lead open-sans-light">Uchwyć wyjątkowe chwile w sercu Krakowa - profesjonalne sesje, 
                 które opowiadają Twoją historię. Z pasją i precyzją, zawsze tam, gdzie potrzebujesz.</p>
                 <section class="buttons">
-                    <button class="secondary open-sans-light">
-                        <a href="cennik.html" class="link">
+                    <button class="secondary open-sans-light" tabindex="-1">
+                        <a href="cennik.html" class="link touch-target">
                             <span class="icon">receipt_long</span>
                             <span class="cta">Zobacz ofertę</span>
                         </a>
                     </button>
-                    <button class="primary open-sans-semibold">
-                        <a href="kontakt.html" class="link">
+                    <button class="primary open-sans-semibold" tabindex="-1">
+                        <a href="kontakt.html" class="link touch-target">
                             <span class="icon">call</span>
                             <span class="cta">Porozmawiajmy</span>
                         </a>
@@ -75,7 +84,7 @@
                     <h2 class="heading open-sans-semibold">Kilka słów o mnie. Kim jestem?</h2>
                 </header>
                 <section class="images">
-                    <img src="./image/photo/brown-and-white-duck-on-white-textile-by-Kamil-Molendys.jpeg" alt="" class="photo grid-1">
+                    <img src="./image/photo/brown-and-white-duck-on-white-textile-by-Kamil-Molendys.webp" alt="" class="photo grid-1">
                     <p class="text open-sans-light grid-2">Fotografia to dla mnie nie tylko praca, ale przede wszystkim sposób na 
                     uchwycenie chwil, które mijają zbyt szybko. Od najmłodszych lat fascynował mnie świat ukryty za obiektywem, 
                     a dziś, po latach doświadczeń, mogę dzielić się tym, co kocham najbardziej - tworzeniem niezapomnianych 
@@ -83,8 +92,8 @@
                     <p class="text open-sans-light grid-3">Jako fotograf działający w Krakowie, znam to miasto jak własną kieszeń. Wiem, 
                     jak złapać najpiękniejsze światło na Wawelu, jak wyciągnąć z Placu Nowego klimat tętniącego życiem Kazimierza, 
                     i gdzie znaleźć najskrytsze zakątki, które nadają każdej sesji wyjątkowego charakteru.</p>
-                    <img src="./image/photo/brown-concrete-building-during-daytime-by-Jacek-Dylag.jpg" alt="" class="photo grid-4">
-                    <img src="./image/photo/gray-concrete-road-between-buildings-by-Janusz-Maniak.jpeg" alt="" class="photo grid-5">
+                    <img src="./image/photo/brown-concrete-building-during-daytime-by-Jacek-Dylag.webp" alt="" class="photo grid-4">
+                    <img src="./image/photo/gray-concrete-road-between-buildings-by-Janusz-Maniak.webp" alt="" class="photo grid-5">
                     <p class="text open-sans-light grid-6">W każdej sesji fotograficznej najważniejsza jest dla mnie autentyczność. 
                     Pracuję z pełnym zaangażowaniem, dbając o każdy detal, aby efekt końcowy oddał dokładnie to, czego oczekujesz. 
                     Czy to sesja ślubna, rodzinna, czy indywidualna — zawsze stawiam na jakość, precyzję i Twoją satysfakcję.</p>
@@ -101,12 +110,14 @@
                 chwile w obiektywie jednocześnie oszczędzając pieniądze.</p>
                 <button class="primary open-sans-semibold content_copy">
                     <span class="cta">pierwszasesja</span>
-                    <span class="icon content_copy_icon">content_copy</span>
+                    <span class="icon content_copy_icon touch-target">content_copy</span>
                 </button>
             </section>
         </main>
-        <footer class="icon footer arrow_upward">arrow_upward</footer>
+        <footer class="icon footer arrow_upward touch-target">arrow_upward</footer>
     </div>
-    <script src="js/index.js" async></script>
+    <script async src="js/index.js"></script>
+    <script async src="js/arrow_downward.js"></script>
+    <script async src="js/content_copy.js"></script>
 </body>
 </html>
