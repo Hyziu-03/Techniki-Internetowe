@@ -9,19 +9,35 @@
     "orientation": "portrait",
     "icons": [
         {
-            "src": "/icons/144x144.png",
-            "sizes": "1024x1024",
+            "src": "/icon/144x144.png",
+            "sizes": "144x144",
             "type": "image/png"
         },
         {
-            "src": "/icons/192x192.png",
+            "src": "/icon/192x192.png",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "/icons/512x512.png",
+            "src": "/icon/512x512.png",
             "sizes": "512x512",
             "type": "image/png"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "./image/manifest/Entry.png",
+            "sizes": "1440x635",
+            "type": "image/png",
+            "form_factor": "wide",
+            "label": "Widok strony głównej"
+        },
+        {
+            "src": "./image/manifest/Pricing.png",
+            "sizes": "1440x2132",
+            "type": "image/png",
+            "form_factor": "narrow",
+            "label": "Cennik"
         }
     ]
 }
